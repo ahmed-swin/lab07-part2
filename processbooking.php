@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking Confirmation</title>
-    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
