@@ -16,8 +16,8 @@ if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
     echo "<p>Welcome $firstname $lastname !</p>";
 }
 
-if (isset($_POST['trip'])) {
-    $trip = $_POST['trip'];
+if (isset($_POST['4day'])) {
+    $trip = $_POST['4day'];
     echo "<p>You are now booked on the $trip</p>";
 }
 
@@ -36,8 +36,8 @@ if (isset($_POST['food'])) {
     echo "<p>Meal Preference: $food</p>";
 }
 
-if (isset($_POST['partySize'])) {
-    $partySize = $_POST['partySize'];
+if (isset($_POST['partysize'])) {
+    $partySize = $_POST['partysize'];
     echo "<p>Number of travellers: $partySize</p>";
 }
 ?>
