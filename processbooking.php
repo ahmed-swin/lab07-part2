@@ -11,34 +11,39 @@
 
 <?php
 if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    echo "<p>Welcome $firstname $lastname !</p>";
+    echo "<p>Welcome " . $_POST['firstname'] . " " . $_POST['lastname'] . " !</p>";
 }
 
+$trip = "";
+
+if (isset($_POST['accom'])) {
+    $trip .= "Accommodation ";
+}
 if (isset($_POST['4day'])) {
-    $trip = $_POST['4day'];
+    $trip .= "and Four-day tour ";
+}
+if (isset($_POST['10day'])) {
+    $trip .= "and Ten-day tour ";
+}
+
+if ($trip != "") {
     echo "<p>You are now booked on the $trip</p>";
 }
 
 if (isset($_POST['species'])) {
-    $species = $_POST['species'];
-    echo "<p>Species: $species</p>";
+    echo "<p>Species: " . $_POST['species'] . "</p>";
 }
 
 if (isset($_POST['age'])) {
-    $age = $_POST['age'];
-    echo "<p>Age: $age</p>";
+    echo "<p>Age: " . $_POST['age'] . "</p>";
 }
 
 if (isset($_POST['food'])) {
-    $food = $_POST['food'];
-    echo "<p>Meal Preference: $food</p>";
+    echo "<p>Meal Preference: " . $_POST['food'] . "</p>";
 }
 
 if (isset($_POST['partysize'])) {
-    $partySize = $_POST['partysize'];
-    echo "<p>Number of travellers: $partySize</p>";
+    echo "<p>Number of travellers: " . $_POST['partysize'] . "</p>";
 }
 ?>
 
